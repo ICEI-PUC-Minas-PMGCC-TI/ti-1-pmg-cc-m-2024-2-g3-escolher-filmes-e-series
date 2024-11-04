@@ -1,0 +1,119 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f8f5;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    background-color: #388e3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-bar button:hover {
+    background-color: #2e7d32;
+}
+
+/* Conteúdo Principal */
+main {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Filtros */
+.filters {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.filters h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.filter-category {
+    margin-bottom: 1rem;
+}
+
+.filter-category label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.filter-category select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+}
+
+/* Categorias */
+.categories {
+    flex: 1;
+}
+
+.categories h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.category-card {
+    background-color: #a5d6a7;
+    color: #2e7d32;
+    padding: 1rem;
+    border-radius: 8px;
+    flex-basis: 30%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-card:hover {
+    background-color: #81c784;
+}
