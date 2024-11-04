@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias e Filtros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Categorias</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar filmes ou séries...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="filters">
+            <h2>Filtros</h2>
+            </div>
+            <div class="filter-category">
+                <label for="year">Ano de Lançamento:</label>
+                <select id="year">
+                    <option value="todos">Todos</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <div class="filter-category">
+                <label for="rating">Classificação:</label>
+                <select id="rating">
+                    <option value="todos">Todas</option>
+                    <option value="5">5 Estrelas</option>
+                    <option value="4">4 Estrelas</option>
+                    <option value="3">3 Estrelas</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="category-list">
+                <div class="category-card">Ação</div>
+                <div class="category-card">Drama</div>
+                <div class="category-card">Comédia</div>
+                <div class="category-card">Romance</div>
+                <div class="category-card">Terror</div>
+                <div class="category-card">Suspense</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
