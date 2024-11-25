@@ -6,22 +6,18 @@ authors:
     given-names: Savio
   - family-names: Saturnino Gonçalves
     given-names: Mateus Henrique
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Oliveira Caetano
+    given-names: João Carlos
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro
+    given-names: Rommel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Freitas Diniz
+    given-names: Luciana Mara
 keywords:
   - 
   - 
