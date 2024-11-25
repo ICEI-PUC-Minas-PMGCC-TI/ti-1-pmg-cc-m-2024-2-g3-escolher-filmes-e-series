@@ -1,11 +1,11 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
-authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+title: CinePulse
+authors: 
+  - family-names: Faria
+    given-names: Savio
+  - family-names: Saturnino Gonçalves
+    given-names: Mateus Henrique
   - family-names: 
     given-names: 
   - family-names: 
