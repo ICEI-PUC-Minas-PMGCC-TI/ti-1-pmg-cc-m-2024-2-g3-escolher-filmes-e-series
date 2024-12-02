@@ -18,9 +18,10 @@ authors:
     affiliation: PUC Minas
     family-names: Freitas Diniz
     given-names: Luciana Mara
-keywords: Filmes, Séries, Recomedações
-  - 
-  - 
+keywords:
+  - Filmes
+  - Séries
+  - Recomendações
 repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-2024-2-g3-escolher-filmes-e-series
 license: CC-BY-4.0
 version: 1.0.0
