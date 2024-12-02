@@ -7,9 +7,7 @@ No vasto oceano de opções de entretenimento, escolher a escolha perfeita de um
 
 * Mateus Saturnino
 * Savio Faria
-* Lucas Couto
-* Phillipe W R Sodre
-
+* 
 ## Professores responsáveis
 
 * João Carlos Oliveira Caetano
