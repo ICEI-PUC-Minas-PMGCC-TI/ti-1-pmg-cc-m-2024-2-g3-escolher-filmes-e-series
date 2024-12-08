@@ -1,1 +1,30 @@
+document.getElementById('submitBtn').addEventListener('click', function() {
+    const userName = document.getElementById('userName').value.trim();
+    const rating = document.getElementById('rating').value;
+    const commentText = document.getElementById('commentText').value;
+    const commentsDiv = document.getElementById('comments');
 
+    if (userName && rating >= 1 && rating <= 10 && commentText) {
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.innerHTML = `
+            <strong>${userName} avaliou: ${rating} / 10</strong><br>
+            ${commentText}
+            <button class="deleteBtn">Excluir</button>
+        `;
+        commentsDiv.appendChild(newComment);
+        
+        // Limpa os campos
+        document.getElementById('userName').value = '';
+        document.getElementById('rating').value = '';
+        document.getElementById('commentText').value = '';
+
+        // Adiciona a funcionalidade de exclusão
+        const deleteBtn = newComment.querySelector('.deleteBtn');
+        deleteBtn.addEventListener('click', function() {
+            commentsDiv.removeChild(newComment);
+        });
+    } else {
+        alert('Por favor, preencha todos os campos corretamente.');
+    }
+});
