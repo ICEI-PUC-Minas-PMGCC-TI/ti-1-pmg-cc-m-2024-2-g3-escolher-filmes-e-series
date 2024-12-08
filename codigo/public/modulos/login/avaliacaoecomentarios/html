@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação e Comentários</title>
+    <link rel="stylesheet" href="comentarios.css">
+</head>
+<body>
 
+<div class="container">
+    <h2>O que achou do filme?</h2>
+    
+    <div class="rating">
+        <label for="userName">Nome:</label>
+        <input type="text" id="userName" placeholder="Seu nome" />
+    </div>
+
+    <div class="rating">
+        <label for="rating">Nota (1 a 10):</label>
+        <input type="number" id="rating" min="1" max="10" />
+    </div>
+
+    <textarea id="commentText" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+    <button id="submitBtn">Enviar</button>
+
+    <div id="comments">
+        <h3>Comentários</h3>
+    </div>
+</div>
+
+<script src="comentarios.js"></script>
+</body>
+</html>
