@@ -1,1 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
 
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.rating label {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.rating input[type="text"],
+.rating input[type="number"] {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.rating input[type="text"]:focus,
+.rating input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #64cb56;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #387631;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    color: #555;
+}
+
+.comment strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.deleteBtn {
+    background-color: #dc3545; /* Cor vermelha */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.deleteBtn:hover {
+    background-color: #c82333; /* Tom mais escuro ao passar o mouse */
+}
