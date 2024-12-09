@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CinePulse - Explore categorias e filtros para encontrar seus filmes e séries favoritos.">
+    <meta name="keywords" content="filmes, séries, categorias, filtros, carrossel">
+    <meta name="author" content="Seu Nome ou Empresa">
+    <title>CinePulse - Categorias e Filtros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">CinePulse</div>
+        <nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes ou séries..." aria-label="Barra de busca">
+                <button class="search-btn" aria-label="Botão de busca">🔍</button>
+            </div>
+            <a href="biblioteca.html" class="library-btn" aria-describedby="library-btn">Biblioteca</a>
+            <a href="homepage.html" class="home-btn" aria-describedby="home-btn">Home</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Filtros -->
+        <section class="filters" aria-labelledby="filters-heading">
+            <h2 id="filters-heading">Filtros</h2>
+            <div class="filter-category">
+                <label for="year">Ano de Lançamento:</label>
+                <select id="year" aria-label="Filtro por ano de lançamento">
+                    <option value="todos">Todos</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+            <div class="filter-category">
+                <label for="rating">Classificação:</label>
+                <select id="rating" aria-label="Filtro por classificação">
+                    <option value="todos">Todas</option>
+                    <option value="10">10 Estrelas</option>
+                    <option value="9">9 Estrelas</option>
+                    <option value="8">8 Estrelas</option>
+                    <option value="7">7 Estrelas</option>
+                    <option value="6">6 Estrelas</option>
+                    <option value="5">5 Estrelas</option>
+                    <option value="4">4 Estrelas</option>
+                    <option value="3">3 Estrelas</option>
+                </select>
+            </div>
+            <div class="filter-category">
+                <label for="type">Tipo:</label>
+                <select id="type" aria-label="Filtro por tipo de conteúdo">
+                    <option value="todos">Todos</option>
+                    <option value="filmes">Filmes</option>
+                    <option value="series">Séries</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Categorias -->
+        <section class="categories" aria-labelledby="categories-heading">
+            <h2 id="categories-heading">Categorias</h2>
+            <div class="category-list" aria-live="polite">
+                <article class="category-card" data-type="filmes" data-year="2023" data-rating="5" role="button" tabindex="0">Ação</article>
+                <article class="category-card" data-type="series" data-year="2022" data-rating="4" role="button" tabindex="0">Drama</article>
+                <article class="category-card" data-type="filmes" data-year="2021" data-rating="3" role="button" tabindex="0">Comédia</article>
+                <article class="category-card" data-type="series" data-year="2020" data-rating="5" role="button" tabindex="0">Romance</article>
+                <article class="category-card" data-type="filmes" data-year="2023" data-rating="4" role="button" tabindex="0">Terror</article>
+                <article class="category-card" data-type="series" data-year="2022" data-rating="3" role="button" tabindex="0">Suspense</article>
+            </div>
+        </section>
+
+        <!-- Carrossel -->
+        <section class="carousel" aria-labelledby="carousel-heading">
+            <h2 id="carousel-heading">Filmes em Destaque</h2>
+            <div class="carousel-container">
+                <button class="prev" aria-label="Anterior">‹</button>
+                <div class="carousel-content" id="carousel-content" aria-live="polite">
+                    <!-- Conteúdo dinâmico será carregado aqui -->
+                </div>
+                <button class="next" aria-label="Próximo">›</button>
+            </div>
+        </section>
+
+        <!-- Mensagem de Nenhum Resultado -->
+        <div class="no-results" style="display: none;">Nenhum resultado encontrado para os filtros aplicados.</div>
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+/* ================= GLOBAL ================= */
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #388e3c;
+    --light-bg: #f0f8f5;
+    --hover-bg: #4caf50;
+    --text-color: #333;
+    --light-text-color: #666;
+    --card-hover-bg: #81c784;
+    --transition-duration: 0.3s;
+    --font-family: Arial, sans-serif;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* ================= HEADER ================= */
+header .library-btn, 
+header .home-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color var(--transition-duration);
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
+    display: inline-block;
+}
+
+header .library-btn:hover,
+header .home-btn:hover {
+    background-color: var(--primary-color);
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 250px;
+    transition: box-shadow var(--transition-duration);
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.search-bar button.search-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    height: 100%;
+    transition: background-color var(--transition-duration);
+}
+
+.search-bar button.search-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* ================= MAIN ================= */
+main {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* ================= FILTERS ================= */
+.filters {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.filters h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.filter-category {
+    margin-bottom: 1rem;
+}
+
+.filter-category label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.filter-category select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    transition: border-color var(--transition-duration);
+}
+
+.filter-category select:focus {
+    border-color: var(--primary-color);
+}
+
+/* ================= CATEGORIES ================= */
+.categories {
+    flex: 1;
+}
+
+.categories h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.category-card {
+    background-color: #99d89b;
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    flex-basis: calc(33.333% - 1rem);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+}
+
+.category-card:hover {
+    background-color: var(--hover-bg);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ================= CAROUSEL ================= */
+.carousel {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 1rem;
+}
+
+.carousel-item {
+    cursor: pointer;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+    min-width: 160px;
+    max-width: 160px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform var(--transition-duration);
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+/* Botões do carrossel */
+.carousel-container .prev,
+.carousel-container .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+    outline: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-duration);
+}
+
+.carousel-container .prev:hover,
+.carousel-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-container .prev {
+    left: 10px;
+}
+
+.carousel-container .next {
+    right: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 120px;
+        max-width: 140px;
+    }
+
+    .category-card {
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .filters {
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .filters.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        min-width: 100px;
+    }
+
+    .category-card {
+        flex-basis: 100%;
+    }
+}
+
+.no-results {
+    text-align: center;
+    color: var(--light-text-color);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
