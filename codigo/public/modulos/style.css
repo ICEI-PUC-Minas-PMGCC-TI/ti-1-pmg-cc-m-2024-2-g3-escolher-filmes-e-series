@@ -1,0 +1,112 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f8f5;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Página de Detalhes */
+#movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#movie-info {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#movie-info img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#movie-info h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #2e7d32;
+}
+
+#movie-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#movie-info strong {
+    color: #388e3c;
+}
+
+/* Informações de Streaming */
+#streaming-info {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#streaming-info h2 {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#streaming-info p {
+    margin: 10px 0;
+}
+
+/* Botão Voltar */
+header .logo {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header .logo:hover {
+    color: #388e3c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #movie-info {
+        padding: 15px;
+    }
+    #movie-info img {
+        width: 80%;
+        max-width: 250px;
+    }
+}

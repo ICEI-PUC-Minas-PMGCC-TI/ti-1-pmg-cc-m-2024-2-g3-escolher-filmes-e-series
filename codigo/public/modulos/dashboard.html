@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Bem-vindo à sua área protegida!</h1>
+        <p>Você fez login com sucesso.</p>
+        <button id="logout-button">continuar</button>
+    </div>
+    <script>
+        document.getElementById("logout-button").addEventListener("click", () => {
+            window.location.href = "index.html"; // Voltar para a página inicial
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePulse</title>
+    <link rel="stylesheet" href="biblioteca.css"> 
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Cinepulse</h1>
+    </header>
+    <main>
+        <form id="movieForm">
+            <input type="text" id="movieTitle" placeholder="Título do Filme" required>
+            <input type="text" id="movieCategory" placeholder="Categoria do Filme" required>
+            <input type="submit" value="Adicionar Filme">
+        </form>
+        <div class="container" id="moviesContainer">
+        </div>
+    </main>
+
+    <script src="biblioteca.js"></script> 
+</body>
+</html>

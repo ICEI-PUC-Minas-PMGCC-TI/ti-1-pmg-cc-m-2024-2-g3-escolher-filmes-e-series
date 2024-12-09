@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="main-container">
+        <!-- Login Section -->
+        <div id="login-section" class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-username">Usuário</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="toggle-link">Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+        </div>
+
+        <!-- Register Section -->
+        <div id="register-section" class="form-container hidden">
+            <h2>Cadastro</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="register-fullname">Nome Completo</label>
+                    <input type="text" id="register-fullname" name="fullname" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-username">Usuário</label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Senha</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p class="toggle-link">Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
